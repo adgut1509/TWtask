@@ -197,6 +197,6 @@ pokazuje kilka przykładów typowych kolumn i reguł, które mogą się pojawić
 Nie wszystkie kolumny mają dostępne sugestie – ale w wielu przypadkach będą one przyspieszały ten manualny proces. 
 :::
 
-<div style="border-left: 4px solid #2980b9; background: #ecf6fc; padding: 1em;">
+<div style={{ borderLeft: '4px solid #2980b9', background: '#ecf6fc', padding: '1em' }}>
   <strong>Info:</strong> Nie wszystkie kolumny mają dostępne sugestie – ale w wielu przypadkach będą one przyspieszały ten manualny proces.
 </div>
