@@ -121,12 +121,13 @@ pokazuje kilka przykładów typowych kolumn i reguł, które mogą się pojawić
 | Category                     | Column Name Contains                                | Suggested Rules                                                                                                                                 |
 |-----------------------------|------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | 📧 Email                    | `%mail%`                                             | Valid email address                                                                                                                              |
-| 🪪 Government IDs           | `%ssn%`, `%nip%`, `%pesel%`, `%ein%`                | - ssn → Valid US SSN<br>- nip → Valid Polish NIP<br>- pesel → Valid Polish PESEL<br>- ein → Valid US EIN                                       |
-| 📅 Dates                    | `created_at`, `updated_at`, `timestamp`, `expiry_date` | - Future dates exist (e.g., `%expirydate%`)<br>- Not in future (e.g., `%createdat%`, `%modifiedat%`)<br>- Is fresh (`%lastupdated%`)<br>- No suspicious dates |
-| 🌐 URLs and IPs             | `url`, `website`, `link`, `ip_address`              | - Valid HTTP address<br>- Valid IPv4 address                                                                                                     |
+| 🪪 Government IDs           | `%ssn%`, `%nip%`, `%pesel%`, `%ein%`                | - ssn → Valid US SSN<br />- nip → Valid Polish NIP<br />- pesel → Valid Polish PESEL<br />- ein → Valid US EIN                                  |
+| 📅 Dates                    | `created_at`, `updated_at`, `timestamp`, `expiry_date` | - Future dates exist (e.g., `%expirydate%`)<br />- Not in future (e.g., `%createdat%`, `%modifiedat%`)<br />- Is fresh (`%lastupdated%`)<br />- No suspicious dates |
+| 🌐 URLs and IPs             | `url`, `website`, `link`, `ip_address`              | - Valid HTTP address<br />- Valid IPv4 address                                                                                                   |
 | 🌍 Postal Codes             | `zip_code`                                           | Valid US zip code (depends on country)                                                                                                           |
-| 🔢 Identifiers & Product Codes | `asin`, `iban`, `imei`, `vin`, `cusip`, `duns`       | - asin → Valid ASIN<br>- iban → Valid IBAN<br>- imei → Valid IMEI<br>- vin → Valid VIN<br>- cusip → Valid CUSIP                                |
+| 🔢 Identifiers & Product Codes | `asin`, `iban`, `imei`, `vin`, `cusip`, `duns`       | - asin → Valid ASIN<br />- iban → Valid IBAN<br />- imei → Valid IMEI<br />- vin → Valid VIN<br />- cusip → Valid CUSIP                         |
 | 🧾 JSON or Metadata         | `%json%`, `%payload%`                                | Valid JSON                                                                                                                                       |
+
 
 :::info
 Nie wszystkie kolumny mają dostępne sugestie – ale w wielu przypadkach będą one przyspieszały ten manualny proces. 
@@ -135,4 +136,3 @@ Nie wszystkie kolumny mają dostępne sugestie – ale w wielu przypadkach będ�
 <div style="border-left: 4px solid #2980b9; background: #ecf6fc; padding: 1em;">
   <strong>Info:</strong> Nie wszystkie kolumny mają dostępne sugestie – ale w wielu przypadkach będą one przyspieszały ten manualny proces.
 </div>
-
