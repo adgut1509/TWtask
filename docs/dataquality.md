@@ -19,8 +19,6 @@ Znajdziesz je wchodząc w Data Governance → Data Quality, a następnie klikaj�
 
 ![Suggested data quality rules for objects view](suggested_data_quality_rules_for_objects.png)
 
-![](.png)
-
 ## Examples
 
 pokazuje kilka przykładów typowych kolumn i reguł, które mogą się pojawić jako sugestie,
