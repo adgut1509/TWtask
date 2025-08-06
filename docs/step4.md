@@ -19,12 +19,10 @@ Procentowy próg – instancja dostanie status fail, jeśli liczba błędnych wi
 
 Liczbowy próg – instancja dostanie status fail, jeśli liczba błędnych wierszy przekroczy określoną liczbę (np. 100 wierszy).
 
-![alt text](Zrzut_ekranu_2025-07-25_o_15.39.55.webp)
+![Setting the data quality threshold menu](setting_the_threshold.png)
 
-Ustawiony threshold można w każdej chwili edytować po zapisaniu instancji. Można też ustawić go masowo dla wielu instancji jednocześnie – co jest szczególnie przydatne w przypadku już istniejących reguł, tak aby użytkownicy nie musieli edytować każdej z osobna.
+Ustawiony threshold można w każdej chwili edytować po zapisaniu instancji. Można też ustawić go masowo dla wielu instancji jednocześnie – co jest szczególnie przydatne w przypadku już istniejących reguł, tak aby użytkownicy nie musieli edytować każdej z osobna. Po zaznaczeniu wielu instancji i kliknięciu Edit selected można ustawić go masowo.
 
-![alt text](Zrzut_ekranu_2025-07-25_o_15.49.51.webp)
+![Bulk setting the threshold button](bulk_setting_the_threshold.png)
 
-Po zaznaczeniu wielu instancji i kliknięciu Edit selected można ustawić go masowo.
-
-![alt text](Zrzut_ekranu_2025-07-25_o_15.50.21.webp)
+![Bulk setting the threshold window](bulk_setting_the_threshold-2.png)

@@ -11,13 +11,15 @@ wyjaśnia użytkownikowi, czym są te sugestie i skąd się biorą,
 
 Żeby to zrobić...
 
-![alt text](Zrzut_ekranu_2025-07-30_o_11.39.18.webp)
+![A suggested data quality rule example](data_quality_rule_suggestion_example.png)
 
 Dodatkowo mamy też miejsce, w którym możemy zobaczyć zbiorcze sugestie reguł dla wszystkich obiektów:
 
 Znajdziesz je wchodząc w Data Governance → Data Quality, a następnie klikając zakładkę Suggestions
 
-![alt text](Zrzut_ekranu_2025-07-30_o_11.40.09.webp)
+![Suggested data quality rules for objects view](suggested_data_quality_rules_for_objects.png)
+
+![](.png)
 
 ## Examples
 
@@ -27,71 +29,71 @@ pokazuje kilka przykładów typowych kolumn i reguł, które mogą się pojawić
   <thead>
     <tr>
       <th>Category</th>
-      <th>Column Name Contains</th>
+      <th>Column Name Notes</th>
       <th>Suggested Rules</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>📧 Email</td>
-      <td><code>%mail%</code></td>
+      <td>Contains <code>%mail%</code></td>
       <td>Valid email address</td>
     </tr>
     <tr>
       <td>🪪 Government IDs</td>
-      <td><code>%ssn%</code>, <code>%nip%</code>, <code>%pesel%</code>, <code>%ein%</code></td>
+      <td>For example: <code>%ssn%</code>, <code>%nip%</code>, <code>%pesel%</code>, <code>%ein%</code></td>
       <td>
         <ul>
-          <li>ssn → Valid US SSN</li>
-          <li>nip → Valid Polish NIP</li>
-          <li>pesel → Valid Polish PESEL</li>
-          <li>ein → Valid US EIN</li>
+          <li>Valid US SSN (for ssn, ssn_%, or %_ssn)</li>
+          <li>Valid Polish NIP (for nip, %nip%, or nip%)</li>
+          <li>Valid Polish PESEL (for pesel)</li>
+          <li>Valid US EIN (for ein)</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>📅 Dates</td>
-      <td><code>created_at</code>, <code>updated_at</code>, <code>timestamp</code>, <code>expiry_date</code></td>
+      <td>Contains: <code>created_at</code>, <code>updated_at</code>, <code>timestamp</code>, <code>expiry_date</code></td>
       <td>
         <ul>
-          <li>Future dates exist (e.g., <code>%expirydate%</code>)</li>
-          <li>Not in future (e.g., <code>%createdat%</code>, <code>%modifiedat%</code>)</li>
-          <li>Is fresh (e.g., <code>%lastupdated%</code>)</li>
+          <li>Future dates exist (e.g., for <code>%expiry%date%</code>)</li>
+          <li>Not in future (e.g., for <code>%created%at%</code> or <code>%modified%at%</code>)</li>
+          <li>Is fresh (e.g., for <code>%last%updated%</code>)</li>
           <li>No suspicious dates (for all dates)</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>🌐 URLs and IPs</td>
-      <td><code>url</code>, <code>website</code>, <code>link</code>, <code>ip_address</code></td>
+      <td>Contains: <code>url</code>, <code>website</code>, <code>link</code>, <code>ip_address</code></td>
       <td>
         <ul>
           <li>Valid HTTP address</li>
-          <li>Valid IPv4 address</li>
+          <li>Valid IPv4 address (for IDs)</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td>🌍 Postal Codes</td>
-      <td><code>zip_code</code></td>
-      <td>Valid US zip code (depends on country)</td>
+      <td>🌍 Postal codes</td>
+      <td>Contains <code>zip_code</code></td>
+      <td>Valid US zip code (depends on the country)</td>
     </tr>
     <tr>
-      <td>🔢 Identifiers and Product Codes</td>
-      <td><code>asin</code>, <code>iban</code>, <code>imei</code>, <code>vin</code>, <code>cusip</code>, <code>duns</code></td>
+      <td>🔢 Identifiers and product codes</td>
+      <td>For example: <code>asin</code>, <code>iban</code>, <code>imei</code>, <code>vin</code>, <code>cusip</code>, <code>duns</code></td>
       <td>
         <ul>
-          <li>asin → Valid ASIN</li>
-          <li>iban → Valid IBAN</li>
-          <li>imei → Valid IMEI</li>
-          <li>vin → Valid VIN</li>
-          <li>cusip → Valid CUSIP</li>
+          <li>Valid ASIN (for asin)</li>
+          <li>Valid IBAN (for iban)</li>
+          <li>Valid IMEI (for imei)</li>
+          <li>Valid VIN (for vin)</li>
+          <li>Valid CUSIP (for cusip)</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td>🧾 JSON or Metadata</td>
-      <td><code>%json%</code>, <code>%payload%</code></td>
+      <td>🧾 JSON or metadata</td>
+      <td>Contains: <code>%json%</code>, <code>%payload%</code></td>
       <td>Valid JSON</td>
     </tr>
   </tbody>
