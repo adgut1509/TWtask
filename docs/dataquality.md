@@ -44,10 +44,10 @@ The table below shows several examples of columns and rules that may be provided
       <td>For example: <code>%ssn%</code>, <code>%nip%</code>, <code>%pesel%</code>, <code>%ein%</code></td>
       <td>
         <ul>
-          <li>Valid US SSN (for ssn, ssn_%, or %_ssn)</li>
-          <li>Valid Polish NIP (for nip, %nip%, or nip%)</li>
-          <li>Valid Polish PESEL (for pesel)</li>
-          <li>Valid US EIN (for ein)</li>
+          <li>Valid US SSN (for <code>ssn</code>, <code>ssn_%</code>, or <code>%_ssn</code>)</li>
+          <li>Valid Polish NIP (for <code>nip</code>, <code>%nip%</code>, or <code>nip%</code>)</li>
+          <li>Valid Polish PESEL (for <code>pesel</code>)</li>
+          <li>Valid US EIN (for <code>ein</code>)</li>
         </ul>
       </td>
     </tr>
@@ -58,8 +58,8 @@ The table below shows several examples of columns and rules that may be provided
         <ul>
           <li>Future dates exist (e.g., for <code>%expiry%date%</code>)</li>
           <li>Not in future (e.g., for <code>%created%at%</code> or <code>%modified%at%</code>)</li>
-          <li>Is fresh (e.g., for <code>%last%updated%</code>)</li>
-          <li>No suspicious dates (for all dates)</li>
+          <li>Is fresh (checks if the column contains values based on a specific freshness interval, e.g., for <code>%last%updated%</code>)</li>
+          <li>No suspicious dates (checks if the column values don't contain implausible dates, for all dates)</li>
         </ul>
       </td>
     </tr>
@@ -83,11 +83,11 @@ The table below shows several examples of columns and rules that may be provided
       <td>For example: <code>asin</code>, <code>iban</code>, <code>imei</code>, <code>vin</code>, <code>cusip</code>, <code>duns</code></td>
       <td>
         <ul>
-          <li>Valid ASIN (for asin)</li>
-          <li>Valid IBAN (for iban)</li>
-          <li>Valid IMEI (for imei)</li>
-          <li>Valid VIN (for vin)</li>
-          <li>Valid CUSIP (for cusip)</li>
+          <li>Valid ASIN (for <code>asin</code>)</li>
+          <li>Valid IBAN (for <code>iban</code>)</li>
+          <li>Valid IMEI (for <code>imei</code>)</li>
+          <li>Valid VIN (for <code>vin</code>)</li>
+          <li>Valid CUSIP (for <code>cusip</code>)</li>
         </ul>
       </td>
     </tr>

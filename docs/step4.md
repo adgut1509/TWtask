@@ -5,7 +5,7 @@ sidebar_position: 1
 ---
 # Step 4: Set Threshold
 
-By default, rule instances receive a *fail* status if any row does not meet the rule's quality criteria. However, in some cases, this might be too restrictive, as you may want to allow a small margin of error (for example, you may decide that it's good enough as long as fewer than 5% of the rows are failed). That's why in the **Set Threshold** step, you can define a threshold that determines how many failed rows are acceptable before an instance gets a *fail* status.
+By default, rule instances receive a *fail* status if any row doesn't meet the rule's quality criteria. However, in some cases, this might be too restrictive, as you may want to allow a small margin of error (for example, you may decide that it's good enough as long as fewer than 100 of the rows fail). That's why in the **Set Threshold** step, you can define a threshold that determines how many failed rows are acceptable before an instance gets a *fail* status.
 
 To set a threshold, turn on the **Threshold** toggle, enter a value, and select one of the two options:
 
