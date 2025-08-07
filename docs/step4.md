@@ -5,31 +5,20 @@ sidebar_position: 1
 ---
 # Step 4: Set Threshold
 
-Domyślnie, Data Quality rule instances dostają status *fail*, jeśli chociaż jeden wiersz nie spełnia warunków reguły. W niektórych przypadkach może to być zbyt restrykcyjne – użytkownicy mogą chcieć dopuścić niewielki margines błędu, np. uznać, że dopóki mniej niż 5% wierszy jest niepoprawnych, wszystko jest w porządku. Dlatego in the **Set Threshold** step,  użytkownik może ustawić własny progu, który określa, ile błędnych wierszy możesz dopuścić, zanim instancja zostanie oznaczona jako *fail*.
+By default, rule instances receive a *fail* status if any row does not meet the rule's quality criteria. However, in some cases, this might be too restrictive, as you may want to allow a small margin of error (for example, you may decide that it's good enough as long as fewer than 5% of the rows are failed). That's why in the **Set Threshold** step, you can define a threshold that determines how many failed rows are acceptable before an instance gets a *fail* status.
 
-:::info
-Domyślnie próg nie jest ustawiony, co oznacza, że reguła działa tak jak dotychczas–nawet jeden niepoprawny wiersz powoduje, że cała instancja dostaje status *fail*.
-:::
+To set a threshold, turn on the **Threshold** toggle, enter a value, and select one of the two options:
 
-If you want to dopuścić pewien margines błędu, to może włączyć opcję ustawiania thresholdu za pomocą przełącznika. Po jej aktywowaniu ma do wyboru dwie możliwości:
+- **Percentage threshold**: The rule instance will fail if the number of failed rows exceeds a given percentage (e.g., 5%).
 
-- **Procentowy próg**: instancja will fail, jeśli liczba błędnych wierszy przekroczy podany procent (np. 5%).
-
-- **Liczbowy próg**: instancja will fail, jeśli liczba błędnych wierszy przekroczy określoną liczbę (np. 100 wierszy).
+- **Number threshold**: The rule instance will fail if the number of failed rows exceeds a specific count (e.g., 100).
 
 ![Setting the data quality threshold menu](setting_the_threshold.png)
 
-Ustawiony threshold można w każdej chwili edytować po zapisaniu instancji. Można też ustawić go masowo dla wielu instancji jednocześnie – co jest szczególnie przydatne w przypadku już istniejących reguł, tak aby użytkownicy nie musieli edytować każdej z osobna. By to zrobić, po zaznaczeniu wielu instancji i kliknięciu Edit selected.
+After saving a rule instance, you can edit its threshold at any time. You can also set it in bulk for multiple instances at once, which is especially useful for existing rules, as you don't need to edit each of them individually. To do that, navigate to the **Rule Instances** tab, select multiple instances, and click **Edit selected**.
 
 ![Bulk setting the threshold button](bulk_setting_the_threshold.png)
 
-A window will open where you can...
+A window will open where you can configure the threshold settings. To apply the settings, click **Apply Bulk changes**.
 
 ![Bulk setting the threshold window](bulk_setting_the_threshold-2.png)
-
-
-
-
-A Data Quality Threshold defines the maximum number or percentage of failed rows that is still considered acceptable for a given rule. It helps decide whether a dataset meets the required level of quality or needs attention.
-
-For example, if a threshold is set to 5%, the rule will pass as long as 95% or more of the rows meet the quality criteria.

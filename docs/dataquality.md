@@ -5,27 +5,25 @@ sidebar_position: 2
 ---
 # Suggested Data Quality Rules
 
-Data Quality rules are key guidelines for effective validation of data, as they define what makes specific data acceptable. You can select them yourself, but Dataedo also provides you suggestions.
+Data Quality rules are key guidelines for effective data validation, as they define what makes specific data acceptable. You can select them yourself, but Dataedo also provides automatic suggestions on the basis of column names and their match to known patterns.
 
-To see suggested Data Quality rules, po wejściu w szczegóły kolumny, w zakładce **Data Quality**, you can see the sugerowane reguły. Dataedo proponuje je automatycznie na podstawie nazw kolumn i ich dopasowania do znanych wzorców. 
-
-For example, in this column, the **Valid email address** rule is suggested. It checks whether the values follow a valid email format.
+To view the suggested rules, navigate to column details and scroll to the bottom of the **Data Quality** tab. As an example, for this column, the **Valid email address** rule is suggested. It checks whether the values follow a valid email format.
 
 ![A suggested data quality rule example](data_quality_rule_suggestion_example.png)
 
-Dodatkowo jest też miejsce, w którym możemy zobaczyć zbiorcze sugestie reguł dla wszystkich obiektów. Znajdziesz je wchodząc w Data Governance → Data Quality, a następnie klikając zakładkę Suggestions. There you can hover over a rule name to display it and assign or reject a rule either for a specific object or masowo, by selecting multiple objects. 
+:::info
+Not all columns have rule suggestions available. 
+:::
+
+To view bulk rule suggestions for all objects, navigate to the **Data Quality** tab in the main menu (it's under the **Data Governance** section) and go to the **Suggestions** tab. There, you can assign or reject them.
 
 ![Suggested data quality rules for objects view](suggested_data_quality_rules_for_objects.png)
 
-:::info
-Nie wszystkie kolumny mają dostępne sugestie – ale w wielu przypadkach będą one przyspieszały ten manualny proces. 
-:::
-
-For more information on Data Quality rules, go to https://docs.dataedo.com/data-quality/rule-instances.
+For more information on Data Quality rules, go to [Rule Instances](https://docs.dataedo.com/data-quality/rule-instances).
 
 ## Examples
 
-The table below pokazuje kilka przykładów typowych kolumn i reguł, które mogą się pojawić jako sugestie.
+The table below shows several examples of columns and rules that may be provided as suggestions.
 
 <table>
   <thead>
